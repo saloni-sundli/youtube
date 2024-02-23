@@ -1,0 +1,81 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Component Styles */
+/* .b1 {
+    @apply border-2 border-yellow-600;
+}
+.b2 {
+    @apply border-2 border-red-600;
+} 
+.b3 {
+    @apply border-2 border-green-600;
+} 
+.b4 {
+    @apply border-2 border-blue-600;
+}
+.b5 {
+    @apply border-2 border-pink-600;
+}
+.b6 {
+    @apply border-2 border-teal-600;
+} */
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.side-bar::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 100px;
+}
+
+.side-bar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #0000004d;
+}
+
+.side-bar::-webkit-scrollbar-thumb {
+    height: 4px;
+    border-radius: 50px;
+    background: #353535;
+    outline: 1px solid rgba(112, 128, 144, 0.349);
+}
+
+.side-bar::-webkit-scrollbar-thumb:hover {
+    background: #232323;
+}
+
+/* Loading Animation */
+.loading {
+    background-image: linear-gradient(45deg, #74AA9C, #326d5d);
+    overflow: visible;
+    width: 0%;
+    animation: load 1s linear reverse;
+}
+
+.loading::after {
+    left: 0%;
+    top: 0%;
+    content: "";
+    width: 1000px;
+    height: 1000px;
+}
+
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
